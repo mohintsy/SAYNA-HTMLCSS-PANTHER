@@ -76,15 +76,16 @@
     display: block;
     width: 400px;
     text-align: justify;
+    color: var(--white);
 }
 
 
 /* # Fin section introduction wakanda */
 
 
-/* Design de la section apropos */
+/* Design de la section info */
 
-#apropos {
+#info {
     background-image: url("../Illustrations + Logo/Wakanda/Pantherwakanda2.png");
     background-position: 0% -10%;
     background-size: 95%;
@@ -95,35 +96,36 @@
     padding: 7% 10%;
 }
 
-#apropos p span {
+#info p span {
     display: block;
     margin-bottom: 20px;
     text-align: justify;
+    color: var(--white);
 }
 
-#apropos h2 {
+#info h2 {
     margin: 20px 0px;
     font-size: 20px;
 }
 
-.left-apropos,
-.right-apropos {
-    width: 550px;
+.left-info,
+.right-info {
+    width: 500px;
 }
 
-.left-apropos .videos-container {
+.left-info .videos-container {
     width: 100%;
     height: 220px;
     background-color: var(--violet-primaire);
     margin: 50px 0px;
 }
 
-.right-apropos img {
+.right-info img {
     width: 100%;
 }
 
 
-/* fin section apropos */
+/* fin section info */
 
 
 /* ###################################################################### */
@@ -151,13 +153,13 @@
         width: auto;
         text-align: justify;
     }
-    #apropos {
+    #info {
         display: flex;
         flex-direction: column;
         padding: 7% 0%;
     }
-    .left-apropos,
-    .right-apropos {
+    .left-info,
+    .right-info {
         margin: auto;
         width: 90%;
     }

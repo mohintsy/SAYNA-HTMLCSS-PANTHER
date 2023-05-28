@@ -118,12 +118,21 @@ header .menu ul li a {
     color: var(--white);
 }
 
-header .menu ul li a:hover,
+header .menu ul li a:hover{
+    text-decoration: underline;
+    color: var(--white);
+
+}
 header .menu .active {
     text-decoration: underline;
     color: var(--violet-secondaire);
 }
 
+header .logo-header .sayna:hover,
+header .logo-header .marvel:hover,
+header .logo-header .x:hover {
+    filter: invert(80%) sepia(100%) saturate(1081%) hue-rotate(197deg) brightness(92%) contrast(110%);
+}
 
 /* Fin du design Header */
 
@@ -147,7 +156,7 @@ header .menu .active {
     align-items: center;
 }
 
-.section-panther .social-logo {
+.section-panther .logo-reseaux-sociaux {
     position: fixed;
     top: 0;
     left: 2.5%;
@@ -162,18 +171,18 @@ header .menu .active {
     border-right: 0;
 }
 
-.section-panther .social-logo .ligne {
+.section-panther .logo-reseaux-sociaux .ligne {
     height: 40vh;
     border: 1px solid var(--white-violet-1);
 }
 
-.section-panther .social-logo .icon-social {
+.section-panther .logo-reseaux-sociaux .icon-reseaux {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.section-panther .social-logo .icon-social img {
+.section-panther .logo-reseaux-sociaux .icon-reseaux img {
     margin: 0px;
     margin: 10px 10px;
     padding-top: 5px;
@@ -193,9 +202,21 @@ header .menu .active {
     margin-bottom: 10px;
 }
 
+.section-panther .intro-panther .texte-intro,
+.section-panther .intro-panther .voir-plus{
+    color: var(--white);
+}
+
 .section-panther .intro-panther a {
     color: var(--white-primaire);
     font-family: "cantarell";
+}
+
+.section-panther .icon-reseaux .fb:hover,
+.section-panther .icon-reseaux .insta:hover,
+.section-panther .icon-reseaux .twt:hover,
+.section-panther .icon-reseaux .tiktok:hover{
+    filter: invert(100%) sepia(5%) saturate(190%) hue-rotate(344deg) brightness(700%) contrast(100%);
 }
 
 
@@ -204,46 +225,54 @@ header .menu .active {
 
 /* Design section slide hero */
 
-.conainer-slides {
+.contenu-slides {
     margin-left: 8%;
     background-color: var(--violet-tertiaire);
     display: flex;
 }
 
-.conainer-slides .card {
+.contenu-slides .card {
     display: flex;
     align-items: center;
-    height: 300px;
+    height: 200px;
 }
 
-.conainer-slides .card img {
+.contenu-slides .card img {
     height: 100%;
 }
 
-.conainer-slides .card .img-active {
-    height: auto;
-    transform: scale(0.8);
+.contenu-slides .card .img-hover-1 {
+    margin-left: 30px;
 }
 
-.conainer-slides .card .decription-slide {
+.contenu-slides .card .decription-slide {
     clear: left;
     margin-top: 30px;
     margin: 0px 30px;
 }
 
-.conainer-slides .card .decription-slide .titre-slide {
-    font-size: 25px;
+.contenu-slides .card .decription-slide .titre-slide {
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-.conainer-slides .card .decription-slide .texte-slide {
+.contenu-slides .card .decription-slide .texte-slide {
     text-align: justify;
     margin-bottom: 10px;
+    color: var(--white);
+    font-size: 12px;
 }
 
-.conainer-slides .card .decription-slide a {
-    color: var(--white-primaire);
+.contenu-slides .card .decription-slide a {
+    color: var(--white);
     font-family: "cantarell";
+    font-size: 12px;
+}
+
+
+.contenu-slides .card .img-hover-1:hover,
+.contenu-slides .card .img-hover-2:hover {
+    transform: scale(1.10);
 }
 
 
@@ -252,29 +281,30 @@ header .menu .active {
 
 /* Design de la Section naissance du prince */
 
-#dob-prince {
+#hero {
     padding-left: 15%;
     padding-top: 10%;
     display: flex;
     justify-content: center;
 }
 
-#dob-prince .contenu-text {
+#hero .contenu-text {
     width: 600px;
 }
 
-#dob-prince .contenu-text h2 {
+#hero .contenu-text h2 {
     margin: 20px 0px;
     font-size: 20px;
 }
 
-#dob-prince .contenu-text p span {
+#hero .contenu-text p span {
     display: block;
     margin-bottom: 20px;
     text-align: justify;
+    color: var(--white)
 }
 
-#dob-prince .presentation {
+#hero .info-perso {
     margin-left: 100px;
     display: flex;
     flex-direction: column;
@@ -282,25 +312,25 @@ header .menu .active {
     align-items: center;
 }
 
-#dob-prince .presentation .img-panther {
+#hero .info-perso .img-panther {
     margin-bottom: 50px;
     width: 100%;
 }
 
-#dob-prince .presentation .profil {
+#hero .info-perso .profil {
     width: 400px;
-    background-color: var(--white-primaire);
+    background-color: var(--white);
     border-radius: 10px;
     margin: auto;
     text-align: center;
 }
 
-#dob-prince .presentation .profil img {
+#hero .info-perso .profil img {
     margin-top: -60%;
     width: 80%;
 }
 
-#dob-prince .presentation .profil .btn-profil {
+#hero .info-perso .profil .btn-profil {
     display: inline-block;
     text-decoration: none;
     font-size: 10px;
@@ -312,20 +342,20 @@ header .menu .active {
     margin: 10px;
 }
 
-#dob-prince .presentation .profil .biographie {
+#hero .info-perso .profil .biographie {
     text-align: left;
     width: 80%;
     margin: auto;
     margin-bottom: 100px;
 }
 
-#dob-prince .presentation .profil .biographie p span {
+#hero .info-perso .profil .biographie p span {
     display: block;
     margin: 10px;
     color: var(--violet-tertiaire);
 }
 
-#dob-prince .presentation .profil .biographie p .detail {
+#hero .info-perso .profil .biographie p .detail {
     font-size: 0.8em;
     font-style: normal;
 }
@@ -420,20 +450,24 @@ footer .logo-footer {
     margin-right: 50px;
 }
 
-footer .policies {
+footer .logo-footer:hover{
+    transform: scale(1.1);
+}
+
+footer .footer-info {
     display: flex;
     flex-direction: column;
     height: 385px;
     margin-left: 50px;
 }
 
-.policies .link {
+.footer-info .liens {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.policies .link .titre {
+.footer-info .liens .titre {
     font-family: "cantarell";
     font-size: 22px;
     color: var(--white);
@@ -441,30 +475,34 @@ footer .policies {
     margin-bottom: 25px;
 }
 
-.policies .link .pages ul li {
+.footer-info .liens li:hover{
+    text-decoration: underline var(--white);
+}
+
+.footer-info .liens .pages ul li {
     display: block;
     margin-bottom: 10px;
 }
 
-.policies .link .pages ul li a {
+.footer-info .liens .pages ul li a {
     text-decoration: none;
     font-family: "cantarell";
     font-size: 16px;
     color: var(--white);
 }
 
-.policies .link .social .social-logo {
+.footer-info .liens .social .logo-reseaux-sociaux {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.policies .link .social .social-logo img:hover {
+.footer-info .liens .social .logo-reseaux-sociaux img:hover {
     /* zoom: 1.1; */
     transform: scale(1.10);
 }
 
-.policies .condition-right {
+.footer-info .copyright {
     text-decoration: none;
     font-family: "cantarell";
     font-size: 14px;
@@ -473,7 +511,7 @@ footer .policies {
     margin-top: 100px;
 }
 
-.policies .condition-right p span {
+.footer-info .copyright p span {
     font-family: " sans-serif";
     font-size: 5em;
     border-radius: 50%;
@@ -502,9 +540,10 @@ footer .policies {
     }
     header .menu ul li {
         display: block;
-        margin: 20px;
+        margin: 0px 1px 0px 0px ;
         text-align: center;
     }
+    
     /* Fin menu  */
     /* feuille de style footer */
     footer {
@@ -512,20 +551,20 @@ footer .policies {
         flex-direction: column;
         text-align: center;
     }
-    footer .policies {
+    footer .footer-info {
         margin: 0px;
         height: auto;
     }
-    .policies .link {
+    .footer-info .liens {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .policies .link .pages,
-    .policies .link .social {
+    .footer-info .liens .pages,
+    .footer-info .liens .social {
         margin: 20px 0px;
     }
-    .policies .condition-right {
+    .footer-info .copyright {
         margin-top: 10px;
     }
     /* fin footer */
@@ -535,7 +574,7 @@ footer .policies {
     /* Propriete Responsive de la section black panther */
 
     .section-panther .intro-panther {
-        margin: auto;
+        margin:  auto;
         width: 90%;
         text-align: center;
         margin: 100px 0px;
@@ -546,13 +585,13 @@ footer .policies {
     }
     /* Fin  */
     /* style responsive  section slide hero */
-    .conainer-slides {
+    .contenu-slides {
         margin-left: 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .conainer-slides .card {
+    .contenu-slides .card {
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -561,31 +600,31 @@ footer .policies {
         text-align: center;
         margin-bottom: 20px;
     }
-    .conainer-slides .card img {
+    .contenu-slides .card img {
         width: 80%;
     }
-    .conainer-slides .card .img-active {
+    .contenu-slides .card .img-active {
         height: auto;
         transform: none;
     }
     /* Fin section slide hero */
     /* Propriete responsive Section naissance du prince */
-    #dob-prince {
+    #hero {
         padding: 0;
         padding-top: 10%;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    #dob-prince .presentation {
+    #hero .info-perso {
         margin: auto;
         width: 90%;
         margin-top: 300px;
     }
-    #dob-prince .contenu-text {
+    #hero .contenu-text {
         width: 90%;
     }
-    #dob-prince .presentation .profil {
+    #hero .info-perso .profil {
         width: 90%;
     }
     /* Fin Section naissance du prince */
@@ -599,3 +638,35 @@ footer .policies {
     }
     /* fin section CONTACT */
 }
+
+
+/* ANNIMATION SLIDE DES CONTENUS */ 
+
+section, img, p, h1, h2, h3, h4, h6, h5, li, span {
+    position: relative;
+    -webkit-animation-name: textmove ;
+            animation-name: textmove;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  
+  @-webkit-keyframes textmove {
+    from {
+      right: 300px;
+    }
+    to {
+      right: 0px;
+    }
+  }
+  
+  @keyframes textmove {
+    from {
+      right: 300px;
+    }
+    to {
+      right: 0px;
+    }
+  }
+  

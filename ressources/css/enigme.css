@@ -71,10 +71,10 @@ label {
     text-align: justify;
     width: 550px;
     margin: 45px 10px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.01em;
 }
 
-.texte-defi .paragraphe {
+.texte-defi .text-contenu {
     background-image: url("../Illustrations + Logo/Enigme/Pantherenigme2.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ label {
     justify-content: center;
 }
 
-.texte-defi .paragraphe p {
+.texte-defi .text-contenu p {
     width: 70%;
     font-size: 11px;
 }
@@ -105,7 +105,7 @@ label {
     margin-left: 15%;
 }
 
-.main-enigme .entete {
+.main-enigme .riddle {
     font-family: "WakandaForever";
     letter-spacing: 0.25em;
     line-height: 50px;
@@ -119,19 +119,19 @@ label {
     margin-bottom: 150px;
 }
 
-.transcription {
+.translate {
     width: 600px;
 }
 
-.transcription .alphabet span {
+.translate .alphabet span {
     font-family: "WakandaForever";
 }
 
-.transcription form {
+.translate form {
     margin-top: 150px;
 }
 
-.transcription form input[type=text] {
+.translate form input[type=text] {
     width: 520px;
     height: 56px;
     border: 1px solid #DF99F2;
@@ -142,12 +142,12 @@ label {
     color: var(--white-primaire);
 }
 
-.transcription form .btn-enigme {
+.translate form .btn-enigme {
     margin-left: 180px;
     margin-top: 50px;
 }
 
-.transcription form .btn-enigme:hover {
+.translate form .btn-enigme:hover {
     filter: drop-shadow(0 0 20px var(--white-primaire));
 }
 
@@ -205,7 +205,7 @@ label {
         text-align: center;
         margin: auto;
     }
-    .texte-defi .paragraphe {
+    .texte-defi .text-contenu {
         background-size: contain;
         background-position: center;
         height: auto;
@@ -214,7 +214,7 @@ label {
     .main-enigme {
         margin-left: 0%;
     }
-    .main-enigme .entete {
+    .main-enigme .riddle {
         letter-spacing: 0.25em;
         width: 100%;
         text-align: center;
@@ -230,18 +230,18 @@ label {
         width: 100%;
         height: auto;
     }
-    .transcription {
+    .translate {
         width: 90%;
         margin: auto;
     }
-    .transcription form {
+    .translate form {
         margin-top: 50px;
     }
-    .transcription form input[type=text] {
+    .translate form input[type=text] {
         width: 100%;
         padding: 0;
     }
-    .transcription form .btn-enigme {
+    .translate form .btn-enigme {
         margin: auto;
     }
 }
